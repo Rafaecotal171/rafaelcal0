@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet"/>
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#contato" onclick="showTab('contato')">Contato</a></li>
+                <li><a href="#experiencias" onclick="showTab('experiencias')">Experiências</a></li>
+                <li><a href="#portfolio" onclick="showTab('portfolio')">Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p1>Seja Bem Vindo ao meu primeiro Site!</p>
+            <p1>Navegue para descobrir mais sobre mim.</p>
+        <section id="contato" class="tab">
+            <h1>Contato</h1>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="experiencias" class="tab" style="display:none;">
+            <h1>Cursos</h1>
+            <p>.Técnico em Eletroeletrônica.</p>
+            <p>.Graduando Engenharia de Software.</p>
+            <h1>Experiências</h1>
+            <p>Trabalho atualmente na empresa Bio Extratus, iniciei nas áreas de produção, passei pela Garantia da Qualidade, na qual me rendeu muita experiencia de todo o processo produtivo da empresa, atualmente estou no setor de Negócios Web, onde estou iniciando a minha experiencia nessa área de TI..</p>
+            <img src="tela principal.jpg" alt="Logo Manutenção">
+
+        </section>
+        <section id="portfolio" class="tab" style="display:none;">
+            <h1>Portfólio</h1>
+            <p>Pagina em construção volte mais tarde...</p>
+            <img src="Manutenção.jpg" alt="Logo Manutenção">
+
+        </section>
+    </main>
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
